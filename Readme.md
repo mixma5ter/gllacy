@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Сергей Иншаков](https://htmlacademy.ru/profile/id59949).
-* Наставник: `Неизвестно`.
+* Студент: [Неопознанный енот](https://htmlacademy.ru/profile/id794407).
+* Наставник: [Сергей Иншаков](https://htmlacademy.ru/profile/id59949).
 
 ---
 
