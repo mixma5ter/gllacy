@@ -52,11 +52,11 @@
           <option value="fat-content">по жирности</option>
         </select>
       </div>
-      <!-- не понятно как сделать двойной ползунок -->
       <div class="price-filter">
-        <label for="sort-price">Цена:</label>
-        <input type="range" id="sort-price" value="">
-        <output name="sum"></output>
+        <label for="price-min">Цена:</label>
+        <input type="range" id="price-min" value="100" min="0" max="800">
+        <label for="price-max"></label>
+        <input type="range" id="price-max" value="500" min="0" max="800">
       </div>
       <div class="fat-content-filter">
         <span>Жирность:</span>
@@ -82,7 +82,7 @@
         <input type="checkbox" name="jam" id="filler-filter-jam">
         <label for="filler-filter-jam">джемы</label>
       </div>
-      <input class="search-form-btn" type="button" value="Применить">
+      <input class="search-form-btn" type="submit" value="Применить">
     </form>
   </section>
   <section class="catalog">
