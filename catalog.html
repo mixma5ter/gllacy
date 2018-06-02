@@ -32,7 +32,7 @@
     <p>8 812 450-25-25</p>
   </div>
 </header>
-<main class="container">
+<main class="catalog__main-container">
   <section class="breadcrumbs">
     <a href="#">Главная</a>
     <a href="#">Каталог</a>
@@ -41,43 +41,43 @@
   <section class="page-title">
     <h2>Сливочное мороженое</h2>
   </section>
-  <section class="search-form">
+  <section class="filter-form">
     <form action="#" method="get">
-      <div class="sort-form">
+      <div class="type-filter">
         <label for="sort-by">Сортировка:</label>
         <select name="sort-by" id="sort-by">
           <option value="1">по популярности</option>
         </select>
       </div>
       <!-- не понятно как сделать двойной ползунок -->
-      <div class="price-form">
+      <div class="price-filter">
         <label for="sort-price">Цена:</label>
         <input type="range" id="sort-price" value="">
         <output name="sum"></output>
       </div>
-      <div class="fat-content-form">
+      <div class="fat-content-filter">
         <span>Жирность:</span>
-        <input type="radio" name="fat-content-search-form" id="fat-content-0" value="0">
+        <input type="radio" name="fat-content-search-filter" id="fat-content-0" value="0">
         <label for="fat-content-0">0%</label>
-        <input type="radio" name="fat-content-search-form" id="fat-content-under10" value="under10" checked>
+        <input type="radio" name="fat-content-search-filter" id="fat-content-under10" value="under10" checked>
         <label for="fat-content-under10">до 10%</label>
-        <input type="radio" name="fat-content-search-form" id="fat-content-under30" value="under30">
+        <input type="radio" name="fat-content-search-filter" id="fat-content-under30" value="under30">
         <label for="fat-content-under30">до 30%</label>
-        <input type="radio" name="fat-content-search-form" id="fat-content-30more" value="30more">
+        <input type="radio" name="fat-content-search-filter" id="fat-content-30more" value="30more">
         <label for="fat-content-30more">выше 30%</label>
       </div>
-      <div class="filler-form">
+      <div class="filler-filter">
         <span>Наполнители:</span>
-        <input type="checkbox" name="chocolate" id="filler-form-chocolate" checked>
-        <label for="filler-form-chocolate">шоколадные</label>
-        <input type="checkbox" name="sugar" id="filler-form-sugar" checked>
-        <label for="filler-form-sugar">сахарные присыпки</label>
-        <input type="checkbox" name="fruit" id="filler-form-fruit">
-        <label for="filler-form-fruit">фрукты</label>
-        <input type="checkbox" name="syrup" id="filler-form-syrup">
-        <label for="filler-form-syrup">сиропы</label>
-        <input type="checkbox" name="jam" id="filler-form-jam">
-        <label for="filler-form-jam">джемы</label>
+        <input type="checkbox" name="chocolate" id="filler-filter-chocolate" checked>
+        <label for="filler-filter-chocolate">шоколадные</label>
+        <input type="checkbox" name="sugar" id="filler-filter-sugar" checked>
+        <label for="filler-filter-sugar">сахарные присыпки</label>
+        <input type="checkbox" name="fruit" id="filler-filter-fruit">
+        <label for="filler-filter-fruit">фрукты</label>
+        <input type="checkbox" name="syrup" id="filler-filter-syrup">
+        <label for="filler-filter-syrup">сиропы</label>
+        <input type="checkbox" name="jam" id="filler-filter-jam">
+        <label for="filler-filter-jam">джемы</label>
       </div>
       <input class="search-form-btn" type="button" value="Применить">
     </form>
