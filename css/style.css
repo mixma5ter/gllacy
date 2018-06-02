@@ -3,6 +3,8 @@ body {
   line-height: 22px;
   color: #ffffff;
   font-family: "Roboto";
+  /* цвет фона временный */
+  background-color: darkgrey;
 }
 
 h2 {
