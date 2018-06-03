@@ -2,9 +2,8 @@ body {
   font-size: 16px;
   line-height: 1.4em;
   color: #ffffff;
-  font-family: "Roboto";
-  /* цвет фона временный */
-  background-color: darkgrey;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #849d8f;
 }
 
 h2 {
@@ -17,4 +16,58 @@ h3 {
   font-size: 35px;
   line-height: 1.2em;
   font-weight: bold;
+}
+
+.main-header {
+  width: 1200px;
+  min-height: 120px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-logo {
+  float: left;
+  width: 154px;
+  margin-right: 24px;
+}
+
+.main-navigation {
+  float: left;
+  width: 410px;
+  margin-top: 20px;
+}
+
+.main-navigation a {
+  margin-right: 28px;
+}
+
+.main-navigation a:last-child {
+  margin-right: 0;
+}
+
+.action-panel {
+  float: right;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+.action-panel a {
+  margin-right: 10px;
+}
+
+.action-panel a:last-child {
+  margin-right: 0;
+}
+
+.header-info {
+  clear: both;
+  float: right;
+}
+
+.header-info p {
+  margin: 0;
+  margin-top: 10px;
 }
