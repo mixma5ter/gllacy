@@ -8,6 +8,12 @@ body {
   margin-right: auto;
 }
 
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 h2 {
   font-size: 60px;
   line-height: 1em;
@@ -29,7 +35,6 @@ p {
 }
 
 .main-header {
-  min-height: 120px;
   padding-left: 27px;
   padding-right: 27px;
   padding-top: 10px;
@@ -71,7 +76,6 @@ p {
 }
 
 .header-info {
-  clear: both;
   float: right;
 }
 
