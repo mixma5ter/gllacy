@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4em;
   color: #ffffff;
   font-family: "Roboto";
   /* цвет фона временный */
@@ -9,12 +9,12 @@ body {
 
 h2 {
   font-size: 60px;
-  line-height: 60.35px;
+  line-height: 1em;
   font-weight: bold;
 }
 
 h3 {
   font-size: 35px;
-  line-height: 41px;
+  line-height: 1.2em;
   font-weight: bold;
 }
