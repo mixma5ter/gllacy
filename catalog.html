@@ -15,10 +15,10 @@
   <nav class="main-navigation">
     <a class="active" href="#">Каталог</a>
     <a href="#">Доставка и оплата</a>
-    <a href="#">Информация</a>
+    <a href="#">О компании</a>
   </nav>
   <div class="action-panel">
-    <a class="search-btn" href="#">Поиск</a>
+    <a class="search-btn" href="#"></a>
     <a class="login-btn" href="#">Вход</a>
     <a class="cart-btn" href="#">2 товара</a>
   </div>
@@ -29,12 +29,14 @@
 </header>
 <main class="catalog__main-container">
   <section class="breadcrumbs">
-    <a href="index.html">Главная</a>
-    <a href="#">Каталог</a>
-    <a href="#">Сливочное</a>
+    <div class="breadcrumbs__wrapper">
+      <a href="index.html">Главная</a>
+      <a href="#">Каталог</a>
+      <a href="#">Сливочное</a>
+    </div>
   </section>
   <section class="page-title">
-    <h2>Сливочное мороженое</h2>
+    <h3>Сливочное мороженое</h3>
   </section>
   <section class="filter-form">
     <form action="#" method="post">
@@ -81,7 +83,7 @@
     </form>
   </section>
   <section class="catalog">
-    <div class="catalog__items-wrapper">
+    <div class="catalog__items-wrapper clearfix">
       <article class="item">
         <div class="item__img-wrap">
           <img class="item__img" src="img/1.png" alt="">
@@ -118,8 +120,6 @@
           <span>Сливочное крем-брюле с карамельной подливкой</span>
         </div>
       </article>
-    </div>
-    <div class="catalog__items-wrapper">
       <article class="item">
         <div class="item__img-wrap">
           <img class="item__img" src="img/5.png" alt="">
@@ -156,8 +156,6 @@
           <span>Сливочное с шоколадной стружкой</span>
         </div>
       </article>
-    </div>
-    <div class="catalog__items-wrapper">
       <article class="item">
         <div class="item__img-wrap">
           <img class="item__img" src="img/9.png" alt="">
@@ -206,7 +204,7 @@
     <a class="next" href="#">next</a>
   </section>
 </main>
-<footer class="main-footer">
+<footer class="main-footer clearfix">
   <div class="container">
     <section class="footer-social">
       <a class="social-btn-tw" href="#">Twitter</a>
