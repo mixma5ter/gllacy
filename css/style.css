@@ -38,6 +38,8 @@ p {
 .page-logo {
   float: left;
   width: 154px;
+  height: 64px;
+  padding: 0;
   margin-right: 24px;
 }
 
@@ -57,12 +59,15 @@ p {
 
 .action-panel {
   float: right;
-  margin-top: 13px;
-  margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 .action-panel a {
+  min-width: 32px;
+  padding: 8px 16px;
   margin-right: 10px;
+  border-radius: 17px;
+  background-color: #9db1a5;
 }
 
 .action-panel a:last-child {
@@ -75,7 +80,15 @@ p {
 }
 
 .header-info p {
-  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.1em;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.header-info p:last-child {
+  font-size: 22px;
+  line-height: 1.1em;
 }
 
 main {
