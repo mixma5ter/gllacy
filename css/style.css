@@ -10,14 +10,18 @@ body {
 h2 {
   font-size: 60px;
   line-height: 1em;
-  font-weight: bold;
   margin: 0;
 }
 
 h3 {
   font-size: 35px;
   line-height: 1.2em;
-  font-weight: bold;
+  margin: 0;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 1.2em;
   margin: 0;
 }
 
@@ -186,6 +190,81 @@ main {
   line-height: 1.2;
   text-align: center;
   background-color: red;
+}
+
+.products ul {
+  padding: 0;
+  margin: 0;
+}
+
+.products__item {
+  float: left;
+  display: block;
+  width: 267px;
+  height: 400px;
+  margin-right: 26px;
+  padding: 40px 0;
+}
+
+.products__item:last-child {
+  margin-right: 0;
+}
+
+.features {
+  box-sizing: border-box;
+  width: 1146px;
+  height: 306px;
+  padding: 25px 20px;
+  color: #323232;
+  border-radius: 14px;
+  background: url("../img/wafle.jpg");
+}
+
+.communicate {
+  margin-top: 40px;
+}
+
+.communicate__blog {
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  width: 560px;
+  height: 220px;
+  padding: 20px;
+  margin-right: 26px;
+  color: #323232;
+  background: url("../img/strawberry-background.png") no-repeat;
+}
+
+.communicate__blog a {
+  display: block;
+  color: #323232;
+  width: 300px;
+}
+
+.communicate__subscribe {
+  float: right;
+  position: relative;
+  box-sizing: border-box;
+  width: 560px;
+  height: 220px;
+  padding: 20px;
+  color: #5a5a5a;
+  background: url("../img/email-background.png") no-repeat;
+}
+
+.contacts {
+  margin-top: 40px;
+}
+
+.contacts__map {
+  margin-left: -27px;
+}
+
+.contacts__card {
+  background-color: #fbfbfb;
+  color: #323232;
+  border-radius: 14px;
 }
 
 footer {
