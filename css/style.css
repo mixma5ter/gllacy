@@ -254,6 +254,7 @@ main {
 }
 
 .contacts {
+  position: relative;
   margin-top: 40px;
 }
 
@@ -262,13 +263,34 @@ main {
 }
 
 .contacts__card {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  padding: 30px 25px;
   background-color: #fbfbfb;
   color: #323232;
   border-radius: 14px;
 }
 
-footer {
+.main-footer {
+  width: 1146px;
+  height: 100px;
   padding-left: 27px;
   padding-right: 27px;
   background-color: #849d8f;
+}
+
+.footer-social {
+  float: left;
+  width: 400px;
+}
+
+.footer-info {
+  float: left;
+  width: 500px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 190px;
 }
