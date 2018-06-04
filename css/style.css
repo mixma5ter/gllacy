@@ -29,6 +29,12 @@ p {
   margin: 0;
 }
 
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 .main-header {
   height: 120px;
   padding: 10px 27px 0;
@@ -139,8 +145,48 @@ main {
   cursor: pointer;
 }
 
+.main-promo__left {
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  width: 560px;
+  height: 229px;
+  padding: 20px;
+  margin-right: 26px;
+  background: url("../img/raspberry-background.png") no-repeat;
+}
 
+.main-promo__right {
+  float: right;
+  position: relative;
+  box-sizing: border-box;
+  width: 560px;
+  height: 229px;
+  padding: 20px;
+  background: url("../img/chocolate-background.png") no-repeat;
+}
 
+.main-promo p {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 16px;
+}
+
+.main-promo__order-btn {
+  float: right;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  box-sizing: border-box;
+  height: 46px;
+  border-radius: 23px;
+  padding: 13px 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  background-color: red;
+}
 
 footer {
   padding-left: 27px;
