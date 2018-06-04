@@ -274,7 +274,6 @@ main {
 
 .main-footer {
   width: 1146px;
-  height: 100px;
   padding-left: 27px;
   padding-right: 27px;
   background-color: #849d8f;
@@ -293,4 +292,39 @@ main {
 .footer-copyright {
   float: right;
   width: 190px;
+}
+
+/*------------------------------------*/
+
+.breadcrumbs__wrapper {
+  position: relative;
+}
+
+.breadcrumbs__wrapper {
+  position: absolute;
+  top: 100px;
+}
+
+.filter-form {
+  margin-top: 30px;
+}
+
+.catalog {
+  margin: 40px 0;
+}
+
+.item {
+  float: left;
+  width: 267px;
+  height: 362px;
+  margin-right: 26px;
+}
+
+.item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.paginator {
+  text-align: right;
+  padding: 30px 0;
 }
