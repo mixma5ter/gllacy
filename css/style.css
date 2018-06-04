@@ -4,9 +4,7 @@ body {
   color: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
   width: 1200px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 h2 {
@@ -33,9 +31,7 @@ p {
 
 .main-header {
   height: 120px;
-  padding-left: 27px;
-  padding-right: 27px;
-  padding-top: 10px;
+  padding: 10px 27px 0;
   background-color: #849d8f;
 }
 
@@ -85,6 +81,45 @@ p {
 main {
   background-color: #849d8f;
 }
+
+.main-slider input[type=radio] {
+  display: none;
+}
+
+.main-slider__controls {
+  margin-top: 475px;
+  margin-left: 27px;
+}
+
+.main-slider__controls label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin: 0;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.main-slider__inner {
+  overflow: hidden;
+}
+
+.main-slider__slides {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  width: 300%;
+}
+
+.main-slider__slide {
+  float: left;
+  width: 1045px;
+  height: 670px;
+}
+
+
 
 footer {
   background-color: #849d8f;
