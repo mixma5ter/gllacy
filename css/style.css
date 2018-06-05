@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
   width: 1200px;
@@ -9,17 +9,17 @@ body {
 
 h2 {
   font-size: 60px;
-  line-height: 1em;
+  line-height: 1;
 }
 
 h3 {
   font-size: 35px;
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 
 h4 {
   font-size: 24px;
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 
 .clearfix {
@@ -86,14 +86,18 @@ h4 {
 
 .header-info p {
   font-size: 14px;
-  line-height: 1.1em;
+  line-height: 1.1;
   text-align: right;
   margin-bottom: 8px;
 }
 
 .header-info p:last-child {
   font-size: 22px;
-  line-height: 1.1em;
+  line-height: 1.1;
+}
+
+.main-slider {
+  height: 490px;
 }
 
 .main-slider__inner {
@@ -136,6 +140,10 @@ h4 {
   margin: 0;
   margin-right: 6px;
   cursor: pointer;
+}
+
+.main-promo {
+  margin-top: 40px;
 }
 
 .main-promo__left {
@@ -181,6 +189,10 @@ h4 {
   background-color: red;
 }
 
+.products {
+  margin-top: 40px;
+}
+
 .products ul {
   padding: 0;
   margin: 0;
@@ -190,9 +202,8 @@ h4 {
   float: left;
   display: block;
   width: 267px;
-  height: 400px;
+  height: 324px;
   margin-right: 26px;
-  padding: 40px 0;
 }
 
 .products__item:last-child {
@@ -204,6 +215,7 @@ h4 {
   width: 1146px;
   height: 306px;
   padding: 25px 20px;
+  margin-top: 40px;
   color: #323232;
   border-radius: 14px;
   background: url("../img/wafle.jpg");
@@ -263,6 +275,7 @@ h4 {
 
 .main-footer {
   width: 1146px;
+  height: 104px;
 }
 
 .footer-social {
@@ -282,11 +295,7 @@ h4 {
 
 /*------------------------------------*/
 
-.breadcrumbs__wrapper {
-  position: relative;
-}
-
-.breadcrumbs__wrapper {
+.breadcrumbs {
   position: absolute;
   top: 100px;
 }
@@ -296,7 +305,7 @@ h4 {
 }
 
 .catalog {
-  margin: 40px 0;
+  margin-top: 40px;
 }
 
 .item {
@@ -312,5 +321,7 @@ h4 {
 
 .paginator {
   text-align: right;
-  padding: 30px 0;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #a9bbb1;
 }
