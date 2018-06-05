@@ -32,9 +32,12 @@ h4 {
   background-color: #849d8f;
 }
 
+.content-wrapper {
+  padding: 10px 27px;
+}
+
 .main-header {
   height: 120px;
-  padding: 10px 27px 0;
 }
 
 .page-logo {
@@ -91,11 +94,6 @@ h4 {
 .header-info p:last-child {
   font-size: 22px;
   line-height: 1.1em;
-}
-
-main {
-  padding-left: 27px;
-  padding-right: 27px;
 }
 
 .main-slider__inner {
@@ -265,8 +263,6 @@ main {
 
 .main-footer {
   width: 1146px;
-  padding-left: 27px;
-  padding-right: 27px;
 }
 
 .footer-social {
