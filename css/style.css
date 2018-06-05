@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 22px;
   color: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
   width: 1200px;
@@ -29,42 +29,54 @@ body {
   float: left;
   width: 154px;
   height: 64px;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 
 .main-navigation {
   float: left;
-  width: auto;
-  margin-top: 20px;
+  margin-top: 13px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
 }
 
 .main-navigation a {
-  margin-right: 27px;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: bold;
+  display: block;
+  padding: 7px 13px;
+  color: #ffffff;
+  border-radius: 28px;
 }
 
-.main-navigation a:last-child {
-  margin-right: 0;
+.main-navigation a:hover {
+  color: #323232;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .action-panel {
   float: right;
-  margin-top: 16px;
+  margin-top: 13px;
 }
 
-.action-panel a {
-  min-width: 32px;
-  padding: 8px 16px;
-  margin-right: 10px;
-  border-radius: 17px;
-  background-color: #9db1a5;
-}
 
-.action-panel a:last-child {
-  margin-right: 0;
-}
+
+
+
+
+
+
+
+
 
 .header-info {
   clear: both;
@@ -73,14 +85,14 @@ body {
 
 .header-info p {
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 16px;
   text-align: right;
   margin-bottom: 8px;
 }
 
 .header-info p:last-child {
   font-size: 22px;
-  line-height: 1.1;
+  line-height: 24px;
 }
 
 .main-slider {
@@ -93,7 +105,6 @@ body {
 
 
 .main-slider__slide h2 {
-  width: 300%;
   text-align: center;
 }
 
@@ -146,7 +157,7 @@ body {
 
 .main-promo p {
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 22px;
   margin-top: 16px;
 }
 
@@ -161,7 +172,7 @@ body {
   border-radius: 23px;
   padding: 13px 20px;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 24px;
   text-align: center;
   background-color: red;
 }
