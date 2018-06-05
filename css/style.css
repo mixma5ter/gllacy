@@ -3,8 +3,10 @@ body {
   line-height: 22px;
   color: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
-  width: 1200px;
-  margin: 0 auto;
+}
+
+body > input[type="radio"] {
+  display: none;
 }
 
 .clearfix {
@@ -14,8 +16,32 @@ body {
 }
 
 .site-wrapper {
+  width: 1200px;
+  margin: 0 auto;
   background-color: #849d8f;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+
+/* Нужно для предварительной загрузки картинок фона */
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/slide-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slide-3.png");
+}
+
+/*----------------------------------------*/
 
 .content-wrapper {
   padding: 10px 27px;
@@ -186,33 +212,84 @@ body {
 
 /*---------------- SLIDER ----------------*/
 
-.main-slider {
-  height: 490px;
-}
-
-.main-slider__slide h2 {
+.slider {
+  position: relative;
+  padding-top: 270px;
   text-align: center;
 }
 
-.main-slider input[type=radio] {
+.slide {
   display: none;
 }
 
-.main-slider__controls {
-  margin-top: 435px;
-  margin-bottom: 60px;
+.slide-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.main-slider__controls label {
+.slide-btn {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  padding: 10px 40px;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 32px;
+  background-image: linear-gradient(#f26843, #e74a35);
+  text-shadow: 0 2px 5px rgba(160, 30, 11, 0.76);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  margin: 0;
-  margin-right: 6px;
   cursor: pointer;
 }
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slide-2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slide-3.png");
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+
 
 /*---------------- PROMO ----------------*/
 
