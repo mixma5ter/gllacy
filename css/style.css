@@ -10,27 +10,20 @@ body {
 h2 {
   font-size: 60px;
   line-height: 1em;
-  margin: 0;
 }
 
 h3 {
   font-size: 35px;
   line-height: 1.2em;
-  margin: 0;
 }
 
 h4 {
   font-size: 24px;
   line-height: 1.2em;
-  margin: 0;
 }
 
 a {
   color: #ffffff;
-}
-
-p {
-  margin: 0;
 }
 
 .clearfix {
@@ -39,10 +32,13 @@ p {
   clear: both;
 }
 
+.site-wrapper {
+  background-color: #849d8f;
+}
+
 .main-header {
   height: 120px;
   padding: 10px 27px 0;
-  background-color: #849d8f;
 }
 
 .page-logo {
@@ -104,7 +100,6 @@ p {
 main {
   padding-left: 27px;
   padding-right: 27px;
-  background-color: #849d8f;
 }
 
 .main-slider__inner {
@@ -276,7 +271,6 @@ main {
   width: 1146px;
   padding-left: 27px;
   padding-right: 27px;
-  background-color: #849d8f;
 }
 
 .footer-social {
