@@ -823,6 +823,7 @@ input[type="submit"]:active {
 
 .item {
   float: left;
+  position: relative;
   width: 267px;
   height: 362px;
   margin-right: 26px;
@@ -830,6 +831,26 @@ input[type="submit"]:active {
 
 .item:nth-child(4n) {
   margin-right: 0;
+}
+
+.item__img-title {
+  position: absolute;
+  top: 207px;
+  left: 0;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.item__content span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .paginator {
