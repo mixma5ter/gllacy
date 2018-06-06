@@ -817,18 +817,6 @@ input[type="submit"]:active {
   float: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .catalog {
   margin-top: 40px;
 }
@@ -849,4 +837,47 @@ input[type="submit"]:active {
   margin-top: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid #a9bbb1;
+}
+
+.paginator a,
+.paginator span {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  padding: 4px;
+  margin:0;
+  border-radius: 50%;
+}
+
+.paginator .prev {
+  font-size: 0;
+  background: url("../img/arrows.png") no-repeat -7px -8px;
+}
+
+.paginator .next {
+  font-size: 0;
+  background: url("../img/arrows.png") no-repeat -5px -47px;
+}
+
+.paginator .current {
+  cursor: default;
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.paginator .disable {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.paginator a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
