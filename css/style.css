@@ -388,6 +388,7 @@ body > input[type="radio"] {
 }
 
 .products__item {
+  position: relative;
   float: left;
   display: block;
   width: 267px;
@@ -397,6 +398,39 @@ body > input[type="radio"] {
 
 .products__item:last-child {
   margin-right: 0;
+}
+
+.products__item a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.products__item a:hover {
+  color: #ffbc9e;
+}
+
+.products__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/hit.png");
+}
+
+.products__price {
+  position: absolute;
+  top: 207px;
+  left: 0;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
 }
 
 /*---------------- FEATURES ----------------*/
