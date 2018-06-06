@@ -43,7 +43,7 @@ body > input[type="radio"] {
 /*----------------------------------------*/
 
 .content-wrapper {
-  padding: 10px 27px;
+  padding: 10px 26px;
 }
 
 /*---------------- HEADER ----------------*/
@@ -317,7 +317,7 @@ body > input[type="radio"] {
   position: relative;
   box-sizing: border-box;
   border-radius: 14px;
-  width: 560px;
+  width: 558px;
   height: 229px;
   padding: 19px;
   margin-right: 26px;
@@ -329,7 +329,7 @@ body > input[type="radio"] {
   position: relative;
   box-sizing: border-box;
   border-radius: 14px;
-  width: 560px;
+  width: 558px;
   height: 229px;
   padding: 19px;
   background: #3c2318 url("../img/chocolate-background.png") no-repeat;
@@ -397,7 +397,7 @@ body > input[type="radio"] {
   position: relative;
   float: left;
   display: block;
-  width: 267px;
+  width: 266px;
   height: 324px;
   margin-right: 26px;
 }
@@ -444,7 +444,6 @@ body > input[type="radio"] {
 .features {
   box-sizing: border-box;
   border-radius: 14px;
-  width: 1146px;
   min-height: 306px;
   padding: 25px 20px;
   margin-top: 40px;
@@ -467,7 +466,7 @@ body > input[type="radio"] {
   margin-left: 55px;
   margin-right: 36px;
   float: left;
-  width: 480px;
+  width: 478px;
 }
 
 .features__wrapper:last-child {
@@ -529,7 +528,7 @@ body > input[type="radio"] {
   position: relative;
   box-sizing: border-box;
   border-radius: 14px;
-  width: 560px;
+  width: 559px;
   height: 220px;
   padding: 20px;
   margin-right: 26px;
@@ -555,7 +554,7 @@ body > input[type="radio"] {
   position: relative;
   box-sizing: border-box;
   border-radius: 14px;
-  width: 560px;
+  width: 559px;
   height: 220px;
   padding: 35px 25px;
   color: #5a5a5a;
