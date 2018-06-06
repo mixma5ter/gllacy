@@ -29,7 +29,6 @@ body > input[type="radio"] {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -315,7 +314,7 @@ body > input[type="radio"] {
   border-radius: 14px;
   width: 560px;
   height: 229px;
-  padding: 20px;
+  padding: 19px;
   margin-right: 26px;
   background: #811022 url("../img/raspberry-background.png") no-repeat;
 }
@@ -327,13 +326,21 @@ body > input[type="radio"] {
   border-radius: 14px;
   width: 560px;
   height: 229px;
-  padding: 20px;
+  padding: 19px;
   background: #3c2318 url("../img/chocolate-background.png") no-repeat;
+}
+
+.main-promo h3 {
+  font-size: 35px;
+  line-height: 41px;
+  margin: 0;
 }
 
 .main-promo p {
   font-size: 18px;
   line-height: 22px;
+  font-weight: bold;
+  margin: 0;
   margin-top: 16px;
 }
 
@@ -345,12 +352,28 @@ body > input[type="radio"] {
   bottom: 20px;
   box-sizing: border-box;
   height: 46px;
-  border-radius: 23px;
   padding: 13px 20px;
+  border-radius: 23px;
+  background-image: linear-gradient(#f26843, #e74a35);
+  text-shadow: 0 2px 5px rgba(160, 30, 11, 0.76);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.main-promo__order-btn:hover {
+  background-image: linear-gradient(#f58669, #ec6f5e);
+}
+
+.main-promo__order-btn:active {
+  background-image: linear-gradient(#c73f2c, #e1613e);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.main-promo__order-btn a {
   font-size: 18px;
   line-height: 24px;
-  text-align: center;
-  background-color: red;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*---------------- PRODUCTS ----------------*/
