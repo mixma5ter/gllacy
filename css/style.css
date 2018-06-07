@@ -983,7 +983,7 @@ border-radius: 50%;
   position: relative;
   font-size: 16px;
   line-height: 18px;
-  width: 702px;
+  width: 690px;
   height: 16px;
   padding: 10px 10px;
   border-radius: 18px;
@@ -993,8 +993,8 @@ border-radius: 50%;
 
 .filler-filter-checkbox {
   position: relative;
-  padding-left: 35px;
-  margin-right: 18px;
+  padding-left: 33px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
