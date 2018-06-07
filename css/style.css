@@ -817,14 +817,33 @@ input[type="submit"]:active {
   color: #ffffff;
 }
 
+.type-filter {
+  width: 193px;
+}
 
+.filter-form__title {
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
 
+.type-filter select {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 18px;
+  color: #ffffff;
+  background: #aabcb2;
+  outline: none;
+}
 
-
-
-
-
-
+.type-filter select:hover {
+  color: #323232;
+  background: #ffffff;
+}
 
 .range-filter {
   width: 218px;
@@ -841,6 +860,7 @@ input[type="submit"]:active {
   vertical-align: top;
   width: auto;
   margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 .price-controls input {
@@ -882,6 +902,10 @@ input[type="submit"]:active {
   border: 8px solid #ffffff;
   border-radius: 50%;
   background: #ababab;
+}
+
+.range-controls .toggle:hover {
+  transform: scale(1.2);
 }
 
 .range-controls .toggle-min {
