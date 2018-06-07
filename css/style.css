@@ -48,6 +48,7 @@ img {
 /*----------------------------------------*/
 
 .content-wrapper {
+  position: relative;
   padding: 10px 26px;
 }
 
@@ -163,32 +164,32 @@ img {
 }
 
 .login-btn::before {
-  content: "";
-  position: absolute;
-  left: 14px;
-  top: 7px;
-  width: 25px;
-  height: 20px;
-  background: url("../img/sprite.png") no-repeat -10px -227px;
+content: "";
+position: absolute;
+left: 14px;
+top: 7px;
+width: 25px;
+height: 20px;
+background: url("../img/sprite.png") no-repeat -10px -227px;
 }
 
 .cart-btn::before {
-  content: "";
-  position: absolute;
-  left: 14px;
-  top: 7px;
-  width: 25px;
-  height: 20px;
-  background: url("../img/sprite.png") no-repeat -10px -10px;
+content: "";
+position: absolute;
+left: 14px;
+top: 7px;
+width: 25px;
+height: 20px;
+background: url("../img/sprite.png") no-repeat -10px -10px;
 }
 
 .action-panel a:hover {
-  color: #323232;
-  background-color: rgba(255, 255, 255, 1);
+color: #323232;
+background-color: rgba(255, 255, 255, 1);
 }
 
 .search-btn:hover::before {
-  background-position: -10px -342px;
+background-position: -10px -342px;
 }
 
 .login-btn:hover::before {
@@ -1139,4 +1140,27 @@ border-radius: 50%;
 
 .paginator a:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*---------------- MODAL PANELS ----------------*/
+
+.search-panel {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 255px;
+  width: 341px;
+  padding: 20px 15px;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.search-panel input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 4px;
+  outline: none;
 }
