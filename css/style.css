@@ -856,7 +856,6 @@ input[type="submit"]:active {
   position: relative;
   height: 20px;
   padding: 16px 21px 0;
-  /*margin-top: 6px;*/
   border-radius: 18px;
   background: #aabcb2;
 }
@@ -869,7 +868,7 @@ input[type="submit"]:active {
 .range-controls .bar {
   width: 60%;
   height: 4px;
-  margin-left: 25px;
+  margin-left: 10%;
   background: #ffffff;
 }
 
