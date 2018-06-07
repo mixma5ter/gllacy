@@ -9,6 +9,11 @@ body > input[type="radio"] {
   display: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .clearfix {
   display: table;
   content: "";
@@ -49,7 +54,7 @@ body > input[type="radio"] {
 /*---------------- HEADER ----------------*/
 
 .main-header {
-  height: 110px;
+  min-height: 110px;
 }
 
 .page-logo {
@@ -62,6 +67,7 @@ body > input[type="radio"] {
 .main-navigation {
   float: left;
   margin-top: 13px;
+  width: 600px;
 }
 
 .main-navigation ul {
@@ -73,6 +79,7 @@ body > input[type="radio"] {
 
 .main-navigation li {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
@@ -105,6 +112,7 @@ body > input[type="radio"] {
 
 .action-panel a {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 16px;
   text-align: left;
@@ -237,6 +245,7 @@ body > input[type="radio"] {
 
 .slide-btn {
   display: inline-block;
+  vertical-align: top;
   padding: 10px 40px;
   font-size: 32px;
   line-height: 44px;
@@ -353,6 +362,7 @@ body > input[type="radio"] {
   cursor: pointer;
   float: right;
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -402,12 +412,13 @@ body > input[type="radio"] {
   margin-right: 26px;
 }
 
-.products__item:last-child {
+.products__item:nth-child(4n) {
   margin-right: 0;
 }
 
 .products__item a {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -452,6 +463,7 @@ body > input[type="radio"] {
 
 .features b {
   display: inline-block;
+  vertical-align: top;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -650,6 +662,7 @@ input[type="submit"] {
   background-image: linear-gradient(#f26843, #e74a35);
   text-shadow: 0 2px 5px rgba(160, 30, 11, 0.76);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  outline: none;
 }
 
 input[type="submit"]:hover {
@@ -786,12 +799,25 @@ input[type="submit"]:active {
   color: #ffffff;
 }
 
+.breadcrumbs a:hover {
+  color: #ffbc9e;
+}
+
 .page-title h3 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
   margin: 0;
 }
+
+
+
+
+
+
+
+
+
 
 .filter-form {
   margin-top: 50px;
@@ -816,6 +842,20 @@ input[type="submit"]:active {
 .price-filter {
   float: left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .catalog {
   margin-top: 40px;
@@ -845,6 +885,7 @@ input[type="submit"]:active {
 
 .item__content span {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 22px;
   text-decoration: underline;
