@@ -1150,7 +1150,7 @@ border-radius: 50%;
 /*---------------- MODAL PANELS ----------------*/
 
 .catalog-menu {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 60px;
   left: 190px;
