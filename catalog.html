@@ -276,9 +276,54 @@
         <p>Сделано в <a class="htmlacademy-site" href="https://htmlacademy.ru/">HTML Academy</a> © 2018</p>
       </section>
     </footer>
-    <div class="search-panel">
-      <input type="search" name="search-panel" placeholder="Что ищем?">
+    <div class="catalog-menu">
+      <a class="catalog-menu__item" >Новинки</a>
+      <hr>
+      <a class="catalog-menu__item on-subpage">Сливочное</a>
+      <a class="catalog-menu__item">Щербеты</a>
+      <a class="catalog-menu__item">Фруктовый лед</a>
+      <a class="catalog-menu__item">Мелорин</a>
     </div>
+    <section class="search-panel">
+      <input type="search" name="search-panel" placeholder="Что ищем?">
+    </section>
+    <form class="login-panel" action="#" method="post">
+      <input type="email" name="login-email" placeholder="Электронная почта">
+      <input type="password" name="login-pass" placeholder="Пароль">
+      <input class="submit-btn" type="submit" name="login-btn" value="Войти">
+      <div class="help-links">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистриция</a>
+      </div>
+    </form>
+    <section class="cart-panel">
+      <table class="item-list">
+        <tr class="item-list__line">
+          <td>Пломбир с апельсиновым джемом</td>
+          <td>1,5 кг х 200 руб.</td>
+          <td>300 руб.</td>
+        </tr>
+        <tr class="item-list__line">
+          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td>1,5 кг х 300 руб.</td>
+          <td>450 руб.</td>
+        </tr>
+      </table>
+      <hr>
+      <b>Итого: 750 руб.</b>
+      <input class="submit-btn" type="submit" name="cart-btn" value="Оформить заказ">
+    </section>
+    <section class="feedback-panel">
+      <button class="feedback-panel__close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="feedback-panel__title">Мы обязательно вам ответим!</h2>
+      <form class="feedback-form" action="#" method="post">
+        <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+        <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5" required></textarea>
+        <button class="submit-btn" type="submit">Отправить</button>
+      </form>
+    </section>
+    <div class="overlay"></div>
   </div>
 </div>
 </body>
