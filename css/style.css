@@ -97,6 +97,11 @@ img {
   background-color: #d07058;
 }
 
+.on-subpage {
+  color: #ffffff;
+  background: rgba(208,112,88,1);
+}
+
 .main-navigation a:hover {
   color: #323232;
   background-color: #ffffff;
@@ -1143,6 +1148,50 @@ border-radius: 50%;
 }
 
 /*---------------- MODAL PANELS ----------------*/
+
+.catalog-menu {
+  /*display: none;*/
+  position: absolute;
+  top: 60px;
+  left: 190px;
+  color: #323232;
+  padding: 0;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.catalog-menu hr {
+  margin: -2px 10px;
+  padding: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.catalog-menu a {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.catalog-menu a:hover {
+  background: rgba(208,112,88,0.3);
+}
+
+.catalog-menu .on-subpage:hover {
+  cursor: default;
+  background: rgba(208,112,88,1);
+}
+
+.catalog-menu a:active {
+  background: rgba(208,112,88,0.5);
+}
+
+.catalog-menu a:nth-child(1) {
+  font-weight: bold;
+}
 
 .search-panel {
   display: none;
