@@ -1298,3 +1298,80 @@ border-radius: 50%;
   color: #ffffff;
   box-shadow: none;
 }
+
+.feedback-panel {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 480px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -240px;
+  padding: 24px;
+  color: #323232;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.feedback-panel__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/X.png") no-repeat 0 0;
+  outline: none;
+}
+
+.feedback-panel__close:active {
+  transform: translate(1px, 1px);
+}
+
+.feedback-panel h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.feedback-panel .feedback-form {
+  margin: 24px 0;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  box-shadow: inset 0 0 1px 1px #b2b2b2;
+}
+
+.feedback-form input[type="text"] {
+  width: 270px;
+}
+
+.feedback-form textarea {
+  width: 458px;
+  resize: none;
+}
+
+.feedback-form .submit-btn {
+  float: right;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 10px 25px;
+  color: #ffffff;
+  box-shadow: none;
+}
