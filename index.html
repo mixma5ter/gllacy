@@ -249,14 +249,16 @@
   </div>
 </div>
 <script>
-  const link = document.querySelector(".feedback-form-btn");
-  const popup = document.querySelector(".feedback-panel");
-  const close = document.querySelector(".feedback-panel__close");
-  const overlay = document.querySelector(".overlay");
+  var link = document.querySelector(".feedback-form-btn");
+  var popup = document.querySelector(".feedback-panel");
+  var close = document.querySelector(".feedback-panel__close");
+  var overlay = document.querySelector(".overlay");
+  var formfocus = popup.querySelector(".feedback-name");
   link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("feedback-panel-show");
     overlay.classList.add("overlay-show");
+    formfocus.focus();
   });
   close.addEventListener("click", function (event) {
     event.preventDefault();
