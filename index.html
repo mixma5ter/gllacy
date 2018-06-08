@@ -173,7 +173,7 @@
             <b>8 812 450-25-25</b><br>
             (с 10 до 20 ежедневно)
           </p>
-          <input class="submit-btn" type="submit" value="Форма обратной связи">
+          <input class="submit-btn feedback-form-btn" type="submit" value="Форма обратной связи">
         </div>
       </section>
     </main>
@@ -248,5 +248,21 @@
     <div class="overlay"></div>
   </div>
 </div>
+<script>
+  const link = document.querySelector(".feedback-form-btn");
+  const popup = document.querySelector(".feedback-panel");
+  const close = document.querySelector(".feedback-panel__close");
+  const overlay = document.querySelector(".overlay");
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("feedback-panel-show");
+    overlay.classList.add("overlay-show");
+  });
+  close.addEventListener("click", function (event) {
+    event.preventDefault();
+    popup.classList.remove("feedback-panel-show");
+    overlay.classList.remove("overlay-show");
+  });
+</script>
 </body>
 </html>
