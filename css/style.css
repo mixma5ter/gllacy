@@ -1200,7 +1200,7 @@ img {
 .fat-content-radio {
   position: relative;
   padding-left: 35px;
-  margin-right: 18px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -1244,7 +1244,7 @@ img {
 .filler-filter-checkbox {
   position: relative;
   padding-left: 33px;
-  margin-right: 20px;
+  margin-right: 18px;
   cursor: pointer;
 }
 
@@ -1328,7 +1328,7 @@ img {
   width: 294px;
   height: 405px;
   border-radius: 10px;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .item:hover,
