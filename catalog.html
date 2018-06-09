@@ -43,7 +43,33 @@
           <input type="search" name="search-panel" placeholder="Что ищем?">
         </div>
         <a class="login-btn" href="#">Вход</a>
+        <form class="login-panel" action="#" method="post">
+          <input type="email" name="login-email" placeholder="Электронная почта">
+          <input type="password" name="login-pass" placeholder="Пароль">
+          <input class="submit-btn" type="submit" name="login-btn" value="Войти">
+          <div class="help-links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистриция</a>
+          </div>
+        </form>
         <a class="cart-btn" href="#">2 товара</a>
+        <div class="cart-panel">
+          <table class="item-list">
+            <tr class="item-list__line">
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr class="item-list__line">
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х 300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <hr>
+          <b>Итого: 750 руб.</b>
+          <input class="submit-btn" type="submit" name="cart-btn" value="Оформить заказ">
+        </div>
       </div>
       <div class="header-info">
         <p>С 10 до 20, ежедневно</p>
@@ -287,34 +313,6 @@
         <p>Сделано в <a class="htmlacademy-site" href="https://htmlacademy.ru/">HTML Academy</a> © 2018</p>
       </section>
     </footer>
-
-    <form class="login-panel" action="#" method="post">
-      <input type="email" name="login-email" placeholder="Электронная почта">
-      <input type="password" name="login-pass" placeholder="Пароль">
-      <input class="submit-btn" type="submit" name="login-btn" value="Войти">
-      <div class="help-links">
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистриция</a>
-      </div>
-    </form>
-    <div class="cart-panel">
-      <table class="item-list">
-        <tr class="item-list__line">
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х 200 руб.</td>
-          <td>300 руб.</td>
-        </tr>
-        <tr class="item-list__line">
-          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг х 300 руб.</td>
-          <td>450 руб.</td>
-        </tr>
-      </table>
-      <hr>
-      <b>Итого: 750 руб.</b>
-      <input class="submit-btn" type="submit" name="cart-btn" value="Оформить заказ">
-    </div>
-    <div class="overlay"></div>
   </div>
 </div>
 </body>
