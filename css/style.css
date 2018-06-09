@@ -232,6 +232,66 @@ img {
   padding-left: 45px;
 }
 
+.login-panel {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 36px;
+  right: 128px;
+  width: 250px;
+  padding: 20px;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.login-btn:hover + .login-panel,
+.login-panel:hover {
+  display: block;
+}
+
+.login-panel input[type="email"],
+.login-panel input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 4px;
+  outline: none;
+}
+
+.login-panel input:hover {
+  box-shadow: inset 0 0 1px 1px #b2b2b2;
+}
+
+.login-panel .submit-btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 10px 25px;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.login-panel .help-links {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  width: 120px;
+}
+
+.login-panel a {
+  color: #323232;
+}
+
+.login-panel a:hover {
+  color: #e84d37;
+}
+
 .cart-btn {
   position: absolute;
   top: 0;
@@ -1236,59 +1296,7 @@ img {
 
 
 
-.login-panel {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 155px;
-  width: 250px;
-  padding: 20px;
-  background: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
 
-.login-panel input[type="email"],
-.login-panel input[type="password"] {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 20px;
-  color: #999999;
-  background-color: #ffffff;
-  border-radius: 4px;
-  outline: none;
-}
-
-.login-panel input:hover {
-  box-shadow: inset 0 0 1px 1px #b2b2b2;
-}
-
-.login-panel .submit-btn {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-  padding: 10px 25px;
-  color: #ffffff;
-  box-shadow: none;
-}
-
-.login-panel .help-links {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  font-size: 13px;
-  line-height: 24px;
-  color: #323232;
-  width: 120px;
-}
-
-.login-panel a {
-  color: #323232;
-}
-
-.login-panel a:hover {
-  color: #e84d37;
-}
 
 .cart-panel {
   display: none;
