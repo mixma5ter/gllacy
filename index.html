@@ -202,12 +202,15 @@
       </section>
     </footer>
     <div class="catalog-menu">
-      <a class="catalog-menu__item" >Новинки</a>
+      <a class="catalog-menu__item">Новинки</a>
       <hr>
       <a class="catalog-menu__item">Сливочное</a>
       <a class="catalog-menu__item">Щербеты</a>
       <a class="catalog-menu__item">Фруктовый лед</a>
       <a class="catalog-menu__item">Мелорин</a>
+    </div>
+    <div class="search-panel">
+      <input type="search" name="search-panel" placeholder="Что ищем?">
     </div>
     <form class="login-panel" action="#" method="post">
       <input type="email" name="login-email" placeholder="Электронная почта">
@@ -218,7 +221,7 @@
         <a href="#">Новая регистриция</a>
       </div>
     </form>
-    <section class="cart-panel">
+    <div class="cart-panel">
       <table class="item-list">
         <tr class="item-list__line">
           <td>Пломбир с апельсиновым джемом</td>
@@ -234,33 +237,72 @@
       <hr>
       <b>Итого: 750 руб.</b>
       <input class="submit-btn" type="submit" name="cart-btn" value="Оформить заказ">
-    </section>
-    <section class="feedback-panel">
+    </div>
+    <div class="feedback-panel">
       <button class="feedback-panel__close" type="button" title="Закрыть">Закрыть</button>
       <h2 class="feedback-panel__title">Мы обязательно вам ответим!</h2>
       <form class="feedback-form" action="#" method="post">
         <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
-        <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
-        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5" required></textarea>
+        <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5"></textarea>
         <button class="submit-btn" type="submit">Отправить</button>
       </form>
-    </section>
+    </div>
     <div class="overlay"></div>
   </div>
 </div>
 <script>
-  var link = document.querySelector(".feedback-form-btn");
-  var popup = document.querySelector(".feedback-panel");
-  var close = document.querySelector(".feedback-panel__close");
-  var overlay = document.querySelector(".overlay");
-  var formfocus = popup.querySelector(".feedback-name");
-  link.addEventListener("click", function(event) {
+  let link = document.querySelector(".feedback-form-btn");
+
+  let popup = document.querySelector(".feedback-panel");
+  let close = document.querySelector(".feedback-panel__close");
+  let overlay = document.querySelector(".overlay");
+
+  let form = popup.querySelector("form");
+  let email = popup.querySelector("[name=feedback-email]");
+  let text = popup.querySelector("[name=feedback-text]");
+  let formfocus = popup.querySelector(".feedback-name");
+
+  let storage = localStorage.getItem("email");
+
+  link.addEventListener("click", function (event) {
     event.preventDefault();
     popup.classList.add("feedback-panel-show");
+    if (storage) {
+      email.value = storage;
+      text.focus();
+    } else {
+      email.focus();
+    }
     overlay.classList.add("overlay-show");
     formfocus.focus();
   });
+
   close.addEventListener("click", function (event) {
+    event.preventDefault();
+    popup.classList.remove("feedback-panel-show");
+    overlay.classList.remove("overlay-show");
+  });
+
+  form.addEventListener("submit", function (event) {
+    if (!email.value || !text.value) {
+      event.preventDefault();
+      console.log("Нужно заполнить поля");
+    } else {
+      localStorage.setItem("email", email.value);
+    }
+  });
+
+  window.addEventListener("keydown", function (event) {
+    if (event.keyCode === 27) {
+      if (popup.classList.contains("feedback-panel-show")) {
+        popup.classList.remove("feedback-panel-show");
+        overlay.classList.remove("overlay-show");
+      }
+    }
+  });
+
+  overlay.addEventListener("click", function (event) {
     event.preventDefault();
     popup.classList.remove("feedback-panel-show");
     overlay.classList.remove("overlay-show");
