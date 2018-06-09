@@ -20,13 +20,15 @@
         <ul>
           <li>
             <a class="catalog-link on-page" href="#">Каталог</a>
-            <div class="catalog-menu">
-              <a href="#">Новинки</a>
-              <hr>
-              <a class="on-subpage" href="catalog.html">Сливочное</a>
-              <a href="#">Щербеты</a>
-              <a href="#">Фруктовый лед</a>
-              <a href="#">Мелорин</a>
+            <div class="catalog-menu__wrapper">
+              <div class="catalog-menu">
+                <a href="#">Новинки</a>
+                <hr>
+                <a class="on-subpage" href="catalog.html">Сливочное</a>
+                <a href="#">Щербеты</a>
+                <a href="#">Фруктовый лед</a>
+                <a href="#">Мелорин</a>
+              </div>
             </div>
           </li>
           <li>
@@ -39,36 +41,44 @@
       </nav>
       <div class="action-panel">
         <a class="search-btn" href="#"></a>
-        <div class="search-panel">
-          <input type="search" name="search-panel" placeholder="Что ищем?">
+        <div class="search-panel__wrapper">
+          <div class="search-panel">
+            <input type="search" name="search-panel" placeholder="Что ищем?">
+          </div>
         </div>
         <a class="login-btn" href="#">Вход</a>
-        <form class="login-panel" action="#" method="post">
-          <input type="email" name="login-email" placeholder="Электронная почта">
-          <input type="password" name="login-pass" placeholder="Пароль">
-          <input class="submit-btn" type="submit" name="login-btn" value="Войти">
-          <div class="help-links">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистриция</a>
+        <div class="login-panel__wrapper">
+          <div class="login-panel">
+            <form action="#" method="post">
+              <input type="email" name="login-email" placeholder="Электронная почта">
+              <input type="password" name="login-pass" placeholder="Пароль">
+              <input class="submit-btn" type="submit" name="login-btn" value="Войти">
+              <div class="help-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистриция</a>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
         <a class="cart-btn" href="#">2 товара</a>
-        <div class="cart-panel">
-          <table class="item-list">
-            <tr class="item-list__line">
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х 200 руб.</td>
-              <td>300 руб.</td>
-            </tr>
-            <tr class="item-list__line">
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х 300 руб.</td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
-          <hr>
-          <b>Итого: 750 руб.</b>
-          <input class="submit-btn" type="submit" name="cart-btn" value="Оформить заказ">
+        <div class="cart-panel__wrapper">
+          <div class="cart-panel clearfix">
+            <table class="item-list">
+              <tr class="item-list__line">
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х 200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr class="item-list__line">
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х 300 руб.</td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <hr>
+            <b>Итого: 750 руб.</b>
+            <input class="submit-btn" type="submit" name="cart-btn" value="Оформить заказ">
+          </div>
         </div>
       </div>
       <div class="header-info">
