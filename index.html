@@ -242,9 +242,9 @@
       <button class="feedback-panel__close" type="button" title="Закрыть">Закрыть</button>
       <h2 class="feedback-panel__title">Мы обязательно вам ответим!</h2>
       <form class="feedback-form" action="#" method="post">
-        <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
-        <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5"></textarea>
+        <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
+        <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5" required></textarea>
         <button class="submit-btn" type="submit">Отправить</button>
       </form>
     </div>
@@ -252,6 +252,7 @@
   </div>
 </div>
 <script>
+
   let link = document.querySelector(".feedback-form-btn");
 
   let popup = document.querySelector(".feedback-panel");
@@ -284,15 +285,6 @@
     overlay.classList.remove("overlay-show");
   });
 
-  form.addEventListener("submit", function (event) {
-    if (!email.value || !text.value) {
-      event.preventDefault();
-      console.log("Нужно заполнить поля");
-    } else {
-      localStorage.setItem("email", email.value);
-    }
-  });
-
   window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
       if (popup.classList.contains("feedback-panel-show")) {
@@ -307,6 +299,7 @@
     popup.classList.remove("feedback-panel-show");
     overlay.classList.remove("overlay-show");
   });
+
 </script>
 </body>
 </html>
