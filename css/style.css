@@ -191,6 +191,37 @@ img {
   padding: 8px 0;
 }
 
+.search-panel {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 36px;
+  right: 230px;
+  width: 341px;
+  padding: 20px 15px;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search-btn:hover + .search-panel,
+.search-panel:hover {
+  display: block;
+}
+
+.search-panel input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-panel input:hover {
+  box-shadow: inset 0 0 1px 1px #b2b2b2;
+}
+
 .login-btn {
   position: absolute;
   top: 0;
@@ -1203,30 +1234,7 @@ img {
 
 /*---------------- MODAL PANELS ----------------*/
 
-.search-panel {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 255px;
-  width: 341px;
-  padding: 20px 15px;
-  background: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
 
-.search-panel input[type="search"] {
-  width: 100%;
-  padding: 10px;
-  color: #999999;
-  background-color: #ffffff;
-  border-radius: 4px;
-  outline: none;
-}
-
-.search-panel input:hover {
-  box-shadow: inset 0 0 1px 1px #b2b2b2;
-}
 
 .login-panel {
   display: none;
