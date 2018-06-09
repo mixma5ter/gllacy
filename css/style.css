@@ -1310,12 +1310,49 @@ img {
   float: left;
   position: relative;
   width: 267px;
-  height: 362px;
+  height: 342px;
   margin-right: 26px;
+  margin-bottom: 20px;
 }
 
 .item:nth-child(4n) {
   margin-right: 0;
+}
+
+.item-view {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: -14px;
+  width: 294px;
+  height: 405px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.item:hover .item-view {
+  display: block;
+}
+
+.item:hover {
+  z-index: 5;
+}
+
+.item-view-btn {
+  position: absolute;
+  bottom: 22px;
+  left: 46px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fefefe;
+  padding: 8px 16px;
+}
+
+.item__img-wrap {
+  position: absolute;
+  z-index: 2;
 }
 
 .item__img-title {
@@ -1328,7 +1365,7 @@ img {
   font-weight: bold;
 }
 
-.item__content span {
+.item__content a {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
