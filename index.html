@@ -21,13 +21,15 @@
         <ul>
           <li>
             <a class="catalog-link" href="#">Каталог</a>
-            <div class="catalog-menu">
-              <a href="#">Новинки</a>
-              <hr>
-              <a href="catalog.html">Сливочное</a>
-              <a href="#">Щербеты</a>
-              <a href="#">Фруктовый лед</a>
-              <a href="#">Мелорин</a>
+            <div class="catalog-menu__wrapper">
+              <div class="catalog-menu">
+                <a href="#">Новинки</a>
+                <hr>
+                <a href="catalog.html">Сливочное</a>
+                <a href="#">Щербеты</a>
+                <a href="#">Фруктовый лед</a>
+                <a href="#">Мелорин</a>
+              </div>
             </div>
           </li>
           <li>
@@ -40,19 +42,25 @@
       </nav>
       <div class="action-panel">
         <a class="search-btn" href="#"></a>
-        <div class="search-panel">
-          <input type="search" name="search-panel" placeholder="Что ищем?">
+        <div class="search-panel__wrapper">
+          <div class="search-panel">
+            <input type="search" name="search-panel" placeholder="Что ищем?">
+          </div>
         </div>
         <a class="login-btn" href="#">Вход</a>
-        <form class="login-panel" action="#" method="post">
-          <input type="email" name="login-email" placeholder="Электронная почта">
-          <input type="password" name="login-pass" placeholder="Пароль">
-          <input class="submit-btn" type="submit" name="login-btn" value="Войти">
-          <div class="help-links">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистриция</a>
+        <div class="login-panel__wrapper">
+          <div class="login-panel">
+            <form action="#" method="post">
+              <input type="email" name="login-email" placeholder="Электронная почта">
+              <input type="password" name="login-pass" placeholder="Пароль">
+              <input class="submit-btn" type="submit" name="login-btn" value="Войти">
+              <div class="help-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистриция</a>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
         <a class="cart-btn" href="#">Пусто</a>
       </div>
       <div class="header-info">
@@ -288,3 +296,13 @@
 </script>
 </body>
 </html>
+
+<!--<form action="#" method="post">-->
+<!--<input type="email" name="login-email" placeholder="Электронная почта">-->
+<!--<input type="password" name="login-pass" placeholder="Пароль">-->
+<!--<input class="submit-btn" type="submit" name="login-btn" value="Войти">-->
+<!--<div class="help-links">-->
+<!--<a href="#">Забыли пароль?</a>-->
+<!--<a href="#">Новая регистриция</a>-->
+<!--</div>-->
+<!--</form>-->
