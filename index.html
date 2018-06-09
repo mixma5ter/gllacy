@@ -20,7 +20,15 @@
       <nav class="main-navigation">
         <ul>
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a class="catalog-link" href="#">Каталог</a>
+            <div class="catalog-menu">
+              <a href="#">Новинки</a>
+              <hr>
+              <a href="catalog.html">Сливочное</a>
+              <a href="#">Щербеты</a>
+              <a href="#">Фруктовый лед</a>
+              <a href="#">Мелорин</a>
+            </div>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -160,7 +168,8 @@
       </section>
       <section class="contacts">
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123563!2d30.32089461548672!3d59.938796869048616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1528532326994" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123563!2d30.32089461548672!3d59.938796869048616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1528532326994"
+                  width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="contacts__card">
           <p>
@@ -201,14 +210,7 @@
         <p>Сделано в <a class="htmlacademy-site" href="https://htmlacademy.ru/">HTML Academy</a> © 2018</p>
       </section>
     </footer>
-    <div class="catalog-menu">
-      <a class="catalog-menu__item">Новинки</a>
-      <hr>
-      <a class="catalog-menu__item">Сливочное</a>
-      <a class="catalog-menu__item">Щербеты</a>
-      <a class="catalog-menu__item">Фруктовый лед</a>
-      <a class="catalog-menu__item">Мелорин</a>
-    </div>
+
     <div class="search-panel">
       <input type="search" name="search-panel" placeholder="Что ищем?">
     </div>
@@ -244,7 +246,8 @@
       <form class="feedback-form" action="#" method="post">
         <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
         <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
-        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5" required></textarea>
+        <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." cols="30" rows="5"
+                  required></textarea>
         <button class="submit-btn" type="submit">Отправить</button>
       </form>
     </div>
