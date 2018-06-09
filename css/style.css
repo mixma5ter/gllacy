@@ -93,6 +93,65 @@ img {
   border-radius: 28px;
 }
 
+.main-navigation a:hover {
+  color: #323232;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-menu {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  left: 190px;
+  padding: 0;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.catalog-link:hover + .catalog-menu,
+.catalog-menu:hover {
+  display: block;
+}
+
+.catalog-menu hr {
+  margin: -2px 10px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-menu a {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px 15px;
+  color: #323232;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.catalog-menu a:hover {
+  background: rgba(208, 112, 88, 0.3);
+}
+
+.catalog-menu .on-subpage:hover {
+  cursor: default;
+  background: rgba(208, 112, 88, 1);
+}
+
+.catalog-menu a:active {
+  background: rgba(208, 112, 88, 0.5);
+}
+
+.catalog-menu a:nth-of-type(1) {
+  font-weight: bold;
+}
+
 .on-page {
   background-color: #d07058;
 }
@@ -100,12 +159,6 @@ img {
 .on-subpage {
   color: #ffffff;
   background: rgba(208, 112, 88, 1);
-}
-
-.main-navigation a:hover {
-  color: #323232;
-  background-color: #ffffff;
-  text-decoration: none;
 }
 
 .action-panel {
@@ -637,7 +690,7 @@ img {
   background-color: #fbfbfb;
   color: #323232;
   border-radius: 14px;
-  box-shadow: 0 0 50px 0 #323232;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .contacts__card p {
@@ -1149,50 +1202,6 @@ img {
 }
 
 /*---------------- MODAL PANELS ----------------*/
-
-.catalog-menu {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 190px;
-  color: #323232;
-  padding: 0;
-  background: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-.catalog-menu hr {
-  margin: -2px 10px;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.catalog-menu a {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-  margin: 0;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.catalog-menu a:hover {
-  background: rgba(208, 112, 88, 0.3);
-}
-
-.catalog-menu .on-subpage:hover {
-  cursor: default;
-  background: rgba(208, 112, 88, 1);
-}
-
-.catalog-menu a:active {
-  background: rgba(208, 112, 88, 0.5);
-}
-
-.catalog-menu a:nth-child(1) {
-  font-weight: bold;
-}
 
 .search-panel {
   display: none;
