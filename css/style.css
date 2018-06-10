@@ -465,10 +465,12 @@ img {
   margin-bottom: 4px;
 }
 
-.header-info b {
+.header-info a {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*---------------- SLIDER ----------------*/
