@@ -782,6 +782,7 @@ img {
 
 .communicate {
   margin-top: 40px;
+  width: 100%;
 }
 
 .communicate__blog {
@@ -792,7 +793,6 @@ img {
   width: 559px;
   height: 220px;
   padding: 20px;
-  margin-right: 26px;
   color: #323232;
   background: #ffffff url("../img/strawberry-background.png") no-repeat;
 }
