@@ -1088,17 +1088,25 @@ img {
   position: relative;
   font-size: 16px;
   line-height: 18px;
-  height: 36px;
-  padding: 0 10px;
-  border-radius: 18px;
   color: #ffffff;
-  background: #aabcb2;
+  width: 193px;
+  height: 36px;
+  padding: 0 16px;
   outline: none;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: #aabcb2 url("../img/icon-down-dir.png") no-repeat 170px center;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .type-filter select:hover {
   color: #323232;
-  background: #ffffff;
+  background: #ffffff url("../img/icon-down-dir-black.png") no-repeat 170px center;
 }
 
 .range-filter {
