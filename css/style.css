@@ -911,6 +911,7 @@ img {
   font-weight: bold;
   padding: 10px 28px;
   border-radius: 22px;
+  color: #ffffff;
 }
 
 .submit-btn {
@@ -1538,7 +1539,7 @@ select::-ms-expand {
   resize: none;
 }
 
-.feedback-form .submit-btn {
+.feedback-form-btn {
   float: right;
   font-size: 18px;
   line-height: 24px;
