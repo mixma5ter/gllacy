@@ -620,6 +620,11 @@ img {
   height: 46px;
   padding: 13px 20px;
   border-radius: 23px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
   background-image: linear-gradient(#f26843, #e74a35);
   text-shadow: 0 2px 5px rgba(160, 30, 11, 0.76);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -632,14 +637,6 @@ img {
 .main-promo__order-btn:active {
   background-image: linear-gradient(#c73f2c, #e1613e);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 0.64);
-}
-
-.main-promo__order-btn a {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 /*---------------- PRODUCTS ----------------*/
