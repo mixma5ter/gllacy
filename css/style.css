@@ -144,7 +144,6 @@ img {
 }
 
 .catalog-menu .on-subpage:hover {
-  cursor: default;
   background: rgba(208, 112, 88, 1);
 }
 
