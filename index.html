@@ -246,18 +246,17 @@
 </div>
 <script>
 
-  let link = document.querySelector(".feedback-form-btn");
+  var link = document.querySelector(".feedback-form-btn"),
+  popup = document.querySelector(".feedback-panel"),
+  close = document.querySelector(".feedback-panel__close"),
+  overlay = document.querySelector(".overlay"),
 
-  let popup = document.querySelector(".feedback-panel");
-  let close = document.querySelector(".feedback-panel__close");
-  let overlay = document.querySelector(".overlay");
+  form = popup.querySelector("form"),
+  email = popup.querySelector("[name=feedback-email]"),
+  text = popup.querySelector("[name=feedback-text]"),
+  formfocus = popup.querySelector(".feedback-name"),
 
-  let form = popup.querySelector("form");
-  let email = popup.querySelector("[name=feedback-email]");
-  let text = popup.querySelector("[name=feedback-text]");
-  let formfocus = popup.querySelector(".feedback-name");
-
-  let storage = localStorage.getItem("email");
+  storage = localStorage.getItem("email");
 
   link.addEventListener("click", function (event) {
     event.preventDefault();
